@@ -21,7 +21,7 @@ Life in the village is organized around the Sun with most activity happening whe
     - Mobile application with audio
     - Easy to use interface for oral-cultures
     - Easy way to discover and install the app
-    - Intermitent nodes as to not affect social dynamics
+    - Intermitent nodes as to not affect social dynamics and lower the costs of infrastructure.
 
 ### Emergency communication in the jungle
 - Mobile nodes that connect and draw energy from phones
