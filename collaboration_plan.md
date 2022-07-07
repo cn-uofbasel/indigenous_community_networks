@@ -3,9 +3,21 @@
 ## User stories
 
 ### Communal organization
+
+Bartolomeu, Maria and Carlos are village leaders at the Balaio Indigenous Territory and are collaborating with Naiara, who lives in Brasilia, on a project to promote food-sovereignty within their communities. Bartolomeu lives at the Balaio village, the largest of the territory and the only one that has access to Internet thru a government satellite connection. Maria and Carlos live on villages that are 20Km away from Balaio village thru a very badly maintained dirt road, which makes it hard for them to get together and collaborate on the different parts of the project.
+
+In 2021 a project was executed to connect the 3 villages using LoRa communication, which only worked regionally, and also added large solar setups to support an Intranet server to provide targeted educational content for all villagers.
+
+Jonas, Jacinta and Cleide are also part of the territory, and leaders of much smaller villages, and the project didn't have enough funding to support their communities, so they are mostly left out of organizational processes because of that. Like most indigenous peoples in the territory they live of the land, planting, hunting and gathering, and have very little financial means that come thru state social assistance, which are not enough to pool enough resources to buy the equipment themselves.
+
+Alexandre was very interested in the LoRa project and learned how to setup the all hardware, but he never had access to a computer so wouldn't know how to install the software necessary to setup new nodes, even if the other villages could buy the equipment.
+
+**Requirements:**
+
 - Inter-territory communication
 - Outside connectivity with Brasilia (major city with collaborators)
 - More nodes that are financially acessible
+- Work model for scaling self-deployment
 
 ### Keeping in touch with family
 
@@ -24,6 +36,13 @@ Life in the village is organized around the Sun with most activity happening whe
     - Intermitent nodes as to not affect social dynamics and lower the costs of infrastructure.
 
 ### Emergency communication in the jungle
+
+André is a fisherman and hunter who lives in the Balaio village. Like all families in the Balaio Territory, his family depends on hunting and gathering from the forest and rivers to survive. And like many from his generation, he can't read of write.
+
+He's out almost everyday fishing, hunting or gathering fruits from the forest, sometimes for days in a roll for larger hunting expeditions. Despite him being very experienced, the Amazon jungle has many dangers and his family is often worried about him, as he has no way to communicate if something happens. There's no cellphone coverage in the jungle, walkie-talkies don't penetrate more then a few meters, and HF radios aren't light enough to be carried. If he's alone and a snake bites him he may not be able to reach his village.
+
+**Requirements:**
+
 - Mobile nodes that connect and draw energy from phones
 
 ## Research problems
@@ -47,7 +66,7 @@ Life in the village is organized around the Sun with most activity happening whe
 
 ## Implementation approach
 - Tremola: add TinySSB with packet format using side-chains
-- Tremola: add voice recording and playback using Codec2 enconding
+- Tremola: add voice recording and playback using Codec2 encoding
 - Tremola: add Meshtastic: connect thru serial, send and receive LoRa packets
 - NodeJs: add Meshtastic: connect thru serial, send and receive LoRa packets
 - NodeJS: convert LoRa packets to and from TinySSB
