@@ -4,20 +4,20 @@
 
 ### Communal organization
 
-Bartolomeu, Maria and Carlos are village leaders at the Balaio Indigenous Territory and are collaborating with Naiara, who lives in Brasilia, on a project to promote food-sovereignty within their communities. Bartolomeu lives at the Balaio village, the largest of the territory and the only one that has access to Internet thru a government satellite connection. Maria and Carlos live on villages that are 20Km away from Balaio village thru a very badly maintained dirt road, which makes it hard for them to get together and collaborate on the different parts of the project.
+Bartolomeu, Maria and Carlos are village leaders at the Balaio Indigenous Territory and are collaborating with Naiara, who lives in Brasilia, on a project to promote food-sovereignty within their communities. Bartolomeu lives at the Balaio village, the largest of the territory and the only one that has access to Internet through a government satellite connection. Maria and Carlos live on villages that are 20Km away from Balaio village through a very badly maintained dirt road, which makes it hard for them to get together and collaborate on the different parts of the project.
 
-In 2021 a project was executed to connect the 3 villages using LoRa communication, which only worked regionally, and also added large solar setups to support an Intranet server to provide targeted educational content for all villagers.
+In 2021, Luandro visited the village as part of first meeting to initiate a project with Nova Era to bring Internet connectivity to the villages, with funding coming from third-parties. During that visit a spontaneous project to connect the 3 villages using LoRa communication was initiated following informal conversations about the capabilities of using LoRa nodes. This project did succeed in providing text communication for organization purposes. In addition, the design of the infrastructure was done to provide additional services such as educational content for children in the village. However, some initial requirements such as allowing all villages to connect to the Internet could not be achieved during that visit.
 
-Jonas, Jacinta and Cleide are also part of the territory, and leaders of much smaller villages, and the project didn't have enough funding to support their communities, so they are mostly left out of organizational processes because of that. Like most indigenous peoples in the territory they live of the land, planting, hunting and gathering, and have very little financial means that come thru state social assistance, which are not enough to pool enough resources to buy the equipment themselves.
+Jonas, Jacinta and Cleide are also part of the territory, and leaders of much smaller neighbouring villages. Like most indigenous peoples in the territory they live of the land, planting, hunting and gathering, and they receive financial assistance from the state, in the order of about 40 Euros per family per month. They are also interested in connecting to the existing infrastructure. Unfortunately, the 2021 project did not have enough funding to also connect their village and the total cost of ownership, partially driven by the larger solar infrastructure required to provided additional services, made replication of similar a similar setup out of reach for their local means. Because they do not have similar connectivity, they are mostly left out of organizational processes organized by the three other villages.
 
-Alexandre was very interested in the LoRa project and learned how to setup the all hardware, but he never had access to a computer so wouldn't know how to install the software necessary to setup new nodes, even if the other villages could buy the equipment.
+During the actual deployment, Alexandre, a boy from one of the villages who has a keen interest for technolgy but never used a computer in his life, followed the installation crew for some of the setups, and learned how to setup the all hardware. However, he wouldn't know how to install the software  to setup new nodes, even if the other villages could buy the equipment.
 
 **Requirements:**
 
 - Inter-territory communication
 - Outside connectivity with Brasilia (major city with collaborators)
 - More nodes that are financially acessible
-- Work model for scaling self-deployment
+- Work model for scaling self-deployment (self-configuration)
 
 ### Keeping in touch with family
 
