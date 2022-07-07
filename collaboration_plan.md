@@ -5,24 +5,34 @@
 
 ![territory map](/imgs/balaio_final.jpg)
 
-### Communal organization
+### Communal organization and initial results
 
 ![povo tukano](/imgs/povo-tukano-4.png)
 
 Bartolomeu, Maria and Carlos are village leaders at the Balaio Indigenous Territory and are collaborating with Naiara, who lives in Brasilia, on a project to promote food-sovereignty within their communities. Bartolomeu lives at the Balaio village, the largest of the territory and the only one that has access to Internet through a government satellite connection. Maria and Carlos live on villages that are 20Km away from Balaio village through a very badly maintained dirt road, which makes it hard for them to get together and collaborate on the different parts of the project.
 
-In 2021, Luandro visited the village as part of first meeting to initiate a project with Nova Era to bring Internet connectivity to the villages, with funding coming from third-parties. During that visit a spontaneous project to connect the 3 villages using LoRa communication was initiated following informal conversations about the capabilities of using LoRa nodes. This project did succeed in providing text communication for organization purposes. In addition, the design of the infrastructure was done to provide additional services such as educational content for children in the village. However, some initial requirements such as allowing all villages to connect to the Internet could not be achieved during that visit.
+In 2021, Luandro visited the village as part of a first meeting to initiate a project with Nova Era to bring Internet connectivity to the villages, with funding coming from third-parties. During that visit a spontaneous project to connect the 3 villages using LoRa communication was initiated, following informal conversations about the capabilities of using LoRa nodes. This project did succeed in showing a proof-of-concept of text communication for organization purposes. In addition, solar-powered nodes providing additional services such as educational content for children in the village were installed in all three villages. 
 
-Jonas, Jacinta and Cleide are also part of the territory, and leaders of much smaller neighboring villages. Like most indigenous peoples in the territory they live of the land, planting, hunting and gathering, and they receive financial assistance from the state, in the order of about 40 Euros per family per month. They are also interested in connecting to the existing infrastructure. Unfortunately, the 2021 project did not have enough funding to also connect their village and the total cost of ownership, partially driven by the larger solar infrastructure required to provided additional services, made replication of similar a similar setup out of reach for their local means. Because they do not have similar connectivity, they are mostly left out of organizational processes organized by the three other villages.
+However, some initial requirements such as allowing all villages to connect to the Internet could not be achieved during that visit. Also, the LoRa node in Balaio failed in the field: there were not other redundant path for connectivity and this therefore LoRa connectivity to Balaio was broken for the other two villages. Finally, there was no database to store messages when the receivers are not online at the time of sending.
 
-During the actual deployment, Alexandre, a boy from one of the villages who has a keen interest for technology but never used a computer in his life, followed the installation crew for some of the setups, and learned how to setup the all hardware. However, he wouldn't know how to install the software  to setup new nodes, even if the other villages could buy the equipment.
+**Requirements (2nd Phase):**
+
+- Finish Internet bridge to connect with Brasilia (major city with collaborators)
+- Add redundant nodes to keep connectivity in the presence of failures
+- Add support for storing messages in transit (Meshtastic DB prototyped, could also work with SSB)
+
+### Extending connectivity to other villages
+
+Jonas, Jacinta and Cleide are also part of the territory, and leaders of much smaller neighboring villages. Like most indigenous peoples in the territory they live off the land, planting, hunting and gathering, and they receive financial assistance from the state, in the order of about 40 Euros per family per month. They are also interested in connecting to the existing infrastructure. Unfortunately, the 2021 project did not have enough funding to also connect their village and the total cost of ownership, partially driven by the larger solar infrastructure required to provided additional services, made replication of similar a similar setup out of reach for their local means. Because they do not have similar connectivity, they are mostly left out of organizational processes organized by the three other villages.
+
+During the deployment of the initial project, Alexandre, a boy from one of the villages who has a keen interest for technology but never used a computer in his life, followed the installation crew for some of the setups, and learned how to setup the all hardware. However, he wouldn't know how to install the software  to setup new nodes, even if the other villages could buy the equipment.
 
 **Requirements:**
 
-- Inter-territory communication
-- Outside connectivity with Brasilia (major city with collaborators)
-- More nodes that are financially accessible
-- Work model for scaling self-deployment (self-configuration)
+    - Add additional connectivity between the different villages, including those that were not connected in the first phase, with additional nodes
+    - Make nodes cheaper (possibly accepting intermittent connectivity)
+    - Figure out a process to provide ready-to-deploy hardware
+    - Enable field updates of Meshstastic, Tremola, and Pub/ssb-servers
 
 ### Keeping in touch with family
 
@@ -32,15 +42,15 @@ Maria lives in Yamirim, a small village in the Amazon, where she works and lives
 
 Maria would love to keep in touch with her daughter more often, mostly through audio messages but sometimes also text. Maria knows how to read and write Portuguese, although she would prefer audio communication, and knows how to use a smartphone. Because there is no Internet connection in her village it would be more convenient for her to install applications on her smartphone from a local repository rather than from an official App Store.
 
-Life in the village is organized around the Sun with most activity happening when the Sun is shining, which is around 12h per day. Outside of work activities, often in the forest a few kms around the village, Maria spends time interacting with other villagers, often during random encounters. As developers of technical solutions, we anticipate that deploying technologies for remote connections may affect the social dynamics in Maria's village as users may prefer to spend time remotely over local interactions; this should eventually be confirmed with Maria and other villagers and let them decide whether they would be ok with such changes or not. In the meantime, it seems to us for the moment that accepting intermittent connectivity would make the infrastructure cheaper and limit the potential negative effects of introducing new communication infrastructure.
+Experiences in deploying Internet to other indigenous villages have shown that Internet access encouraged addictive behaviour, around porn, games, and social media, and threatened the social fabric of villages. In reaction, some villages such as the 21 part of the Guarani Mbya ethnic group even decided to block Internet access during some times of the day. This suggests that deployment of connectivity solutions should be done progressively to let the villagers assess the impact of more limited forms of communication before deployment high-bandwidth Internet access to every individual. Text and audio messages over an intermittent connectivity infrastructure seems like a good first step in enabling connectivity with remote family members without introducing unwanted social dynamics.
 
 **Requirements:**
 
-    - Bridge to a node with Internet connection
+    - Bridge to a node with Internet connection, only for synchronizing SSB messages
     - Mobile application with audio
     - Easy to use interface for oral-cultures
     - Easy way to discover and install the app
-    - Intermitent nodes as to not affect social dynamics and lower the costs of infrastructure.
+    - Intermitent nodes as to not affect social dynamics.
 
 ### Emergency communication in the jungle
 
