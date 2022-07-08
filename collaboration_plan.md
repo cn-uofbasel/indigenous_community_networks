@@ -104,6 +104,7 @@ To Discuss with CFT
 - [Meshtastic Python](https://github.com/meshtastic/Meshtastic-python)
 - [Kotlin codec2 wrapper](https://github.com/masterjefferson/kodec2)
 - [SSB DB2](https://github.com/ssbc/ssb-db2)
+- [Reticulum](https://github.com/markqvist/Reticulum/)
 
 #### Interfaces
 - [Huiom: audio-only ssb client](https://github.com/luandro/huiom)
