@@ -50,7 +50,7 @@ Experiences in deploying Internet to other indigenous villages have shown that I
     - Mobile application with audio
     - Easy to use interface for oral-cultures
     - Easy way to discover and install the app
-    - Intermitent nodes as to not affect social dynamics.
+    - Intermittent nodes as to not affect social dynamics.
 
 ### Emergency communication in the jungle
 
@@ -97,12 +97,27 @@ To Discuss with CFT
 - NodeJS: pull new messages from LoRa mesh in case user wasn't online when updates were sent
 - NodeJS: have a queue of tinySSB packets to send thru LoRa 
 
-### Userful links:
-- [Meshtastic Android](https://github.com/meshtastic/Meshtastic-Android)
+### Useful links:
+
+#### Libs
 - [geeksville-androidlib](https://github.com/meshtastic/geeksville-androidlib)
 - [Meshtastic Python](https://github.com/meshtastic/Meshtastic-python)
 - [Kotlin codec2 wrapper](https://github.com/masterjefferson/kodec2)
 - [SSB DB2](https://github.com/ssbc/ssb-db2)
+
+#### Interfaces
+- [Huiom: audio-only ssb client](https://github.com/luandro/huiom)
+- [Meshtastic Android](https://github.com/meshtastic/Meshtastic-Android)
+- [Zello: walkie-talkie app](https://play.google.com/store/apps/details?id=com.loudtalks)
+
+#### Posts
+- [Report on first Balaio deployment](https://viewer.scuttlebot.io/%25klnREUIw9FHajWCwzzVDwZJPjfhU9hQo2faE659b3%2F0%3D.sha256)
+- [Report on first LoRa experiment](https://viewer.scuttlebot.io/%25hMC%2FIx%2FmnDvk0KYGcvXGo%2FKt8UuegWYz6vB91RyhIKQ%3D.sha256)
+- [Report on audio-only SSB app](https://viewer.scuttlebot.io/%25Uh6Qk%2F9ncyKFJWJXDOeLSU1CLIagXc%2BANyT999Ol5dw%3D.sha256)
+- [Thread on first thoughts of Meshtastic and SSB integration](https://viewer.scuttlebot.io/%25tz%2F6ms3u5cN5y3pKtRhtCkC4eXp7ASnhj6KU1tnA6bA%3D.sha256)
+- [TinySSB conceptualization](ssb:message/sha256/VhSjGE4713avLfYRSnrSH-WcASL7WMNFWnuxnDGMmWo=)
+- Shadow Packets [1](ssb:message/sha256/VhSjGE4713avLfYRSnrSH-WcASL7WMNFWnuxnDGMmWo=), [2](ssb:message/sha256/VhSjGE4713avLfYRSnrSH-WcASL7WMNFWnuxnDGMmWo=) and [3](ssb:message/sha256/VhSjGE4713avLfYRSnrSH-WcASL7WMNFWnuxnDGMmWo=)
+- [ScuttleSort](ssb:message/sha256/VhSjGE4713avLfYRSnrSH-WcASL7WMNFWnuxnDGMmWo=)
 
 ## Future work
 - Minimize packet sizes by indexing identities on every pub server and only send first 4 characters
