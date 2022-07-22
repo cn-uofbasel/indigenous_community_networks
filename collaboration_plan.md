@@ -86,6 +86,14 @@ To Discuss with CFT
 - Have a work model for scaling for self-deployment
 
 ## Timeline
+1. ~~Test Codec2 audio recording and playback~~
+1. Multi-hop forwarding
+    - If Meshtastic, what is the advantage of TinySSB?
+    - DAG or tangle construction on SSB look-alike
+1. Chat application logic (Tremola as starting point)
+1. Onboarding logic
+1. Help screens
+
 
 ## Implementation approach
 - Tremola: add TinySSB with packet format using side-chains
@@ -95,7 +103,7 @@ To Discuss with CFT
 - NodeJS: convert LoRa packets to and from TinySSB
 - NodeJS: convert tinySSB messages to and from Classic SSB
 - NodeJS: pull new messages from LoRa mesh in case user wasn't online when updates were sent
-- NodeJS: have a queue of tinySSB packets to send thru LoRa 
+- NodeJS: have a queue of tinySSB packets to send thru LoRa
 
 ### Useful links:
 
